@@ -3,9 +3,8 @@
         {
             "id": 1,
             "name": "Andrew Cheatham",
-            "email": "andrew@cheatham.com",
-            "male": "true", 
-            "female": "false"
+            "email": "andrew@cheatham.com", 
+            "gender": "male"
         }
     ], 
     "userWeights": [
