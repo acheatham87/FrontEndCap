@@ -11,7 +11,9 @@ export const Home = () => {
 
     return(  
         <>
-        <p className="welcome">Welcome, {userName}</p>
+        <h2 className="welcome">Welcome, {userName}</h2>
+        <h3> Your current goals:</h3>
+
         </>
         )
 }

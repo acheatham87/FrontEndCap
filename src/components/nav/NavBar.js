@@ -14,7 +14,7 @@ export const NavBar = ({clearUser}) => {
                     <Link className={`navbar__link ${location.pathname === '/friends' ? 'active':''}`} to="/Goals">Goals</Link>
                 </li>
                 <li className="navBar_item item_left">
-                    <Link className={`navbar__link ${location.pathname === '/friends' ? 'active':''}`} to="/Goals">Accomplishments</Link>
+                    <Link className={`navbar__link ${location.pathname === '/Achievements' ? 'active':''}`} to="/Achievements">Achievements</Link>
                 </li>
                 <li className="navBar_item item_left">
                     <Link className={`navbar__link ${location.pathname === '/friends' ? 'active':''}`} to="/Goals">Lift Details</Link>
