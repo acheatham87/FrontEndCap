@@ -40,6 +40,7 @@ export const Register = () => {
 					body: JSON.stringify({
 						email: registerUser.email,
 						name: `${registerUser.name}`,
+						gender: registerUser.gender,
 					}),
 				})
 					.then((res) => res.json())
@@ -70,11 +71,11 @@ export const Register = () => {
 			</dialog>
 
 			<form className="form--login" onSubmit={handleRegister}>
-				{/* <h1 className="h3 mb-3 font-weight-normal">
-					Please Register
-				</h1> */}
+				<h1 className="h3 mb-3 font-weight-normal">
+					Welcome to Level, Please Register Below
+				</h1>
 				<fieldset>
-					<label htmlFor="firstName"> Name </label>
+					<label htmlFor="name"> Name </label>
 					<input
 						type="text"
 						name="name"
@@ -87,10 +88,10 @@ export const Register = () => {
 						onChange={handleInputChange}
 					/>
 				</fieldset>
-                <fieldset>
+                {/* <fieldset>
 					<label htmlFor="gender"> Gender </label>
 					<input
-						type="text"
+						type="gender"
 						name="gender"
 						id="gender"
 						className="form-control"
@@ -100,6 +101,16 @@ export const Register = () => {
 						value={registerUser.gender}
 						onChange={handleInputChange}
 					/>
+				</fieldset> */}
+				<fieldset>
+                	<div>
+						{/* <label htmlFor="gender">Gender</label> */}
+						<select value={registerUser.gender} name="gender" id="gender" onChange={handleInputChange} className="form-control" >
+							<option value="0">Select a gender</option>
+								<option>male</option>
+								<option>female</option>
+						</select>
+					</div>
 				</fieldset>
 				<fieldset>
 					<label htmlFor="inputEmail"> Email address </label>
@@ -115,7 +126,7 @@ export const Register = () => {
 					/>
 				</fieldset>
 				<fieldset>
-					<button type="submit"> Sign in </button>
+					<button type="submit"> Register </button>
 				</fieldset>
 			</form>
 		</main>
