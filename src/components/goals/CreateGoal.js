@@ -15,65 +15,62 @@ export const CreateGoal = () => {
 
     const navigate = useNavigate()
 
-    const handleSelect = () => {
-        if (document.getElementById("lift-selection").value == 1) {
-            document.getElementById("bench").disabled = false
-            document.getElementById("squat").disabled = true
-            document.getElementById("deadlift").disabled = true
-        };
-        if (document.getElementById("lift-selection").value == 2) {
-            document.getElementById("bench").disabled = true
-            document.getElementById("squat").disabled = false
-            document.getElementById("deadlift").disabled = true
-        };
-        if (document.getElementById("lift-selection").value == 3) {
-            document.getElementById("bench").disabled = true
-            document.getElementById("squat").disabled = true
-            document.getElementById("deadlift").disabled = false
-        };
-        if (document.getElementById("lift-selection").value == 0) {
-            document.getElementById("bench").disabled = true
-            document.getElementById("squat").disabled = true
-            document.getElementById("deadlift").disabled = true
-        };
+    const handleInputChange = (event) => {
+
+        const gender = JSON.parse(sessionStorage.getItem("level_user_gender"))
+        let benchInput = document.getElementById("bench")
+        let squatInput = document.getElementById("squat")
+        let deadliftInput = document.getElementById("deadlift")
+
+        switch (event.target.id) {
+            case "bench":
+                let b = ifBench(benchInput.value, gender)
+                squatInput.value = b[1]
+                deadliftInput.value = b[2]
+                
+                break;
+            case "squat":
+                let s = ifSquat(squatInput.value, gender)
+                benchInput.value = s[0]
+                deadliftInput.value = s[2]
+
+                break;
+            case "deadlift":
+                let d = ifDeadlift(deadliftInput.value, gender)
+                benchInput.value = d[0]
+                squatInput.value = d[1]
+
+                break;
+        
+            default:
+                break;
+        }
     }
 
-
-    return (
+     return (
         <form className="new-goal-form">
             <h2 className="new-goal-header">Create a New Goal</h2>
-            <p className="new-goal-instructions">Select a lift from the drop down menu below.  After selecting a lift, input your goal weight for said lift.  LEVEL will generate a proportional goal for your other lifts</p>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="lifts">Select a lift</label>
-                    <select name="lift-selection" id="lift-selection" className="newGoal-form-control" onChange={handleSelect}>
-                        <option value="0">--</option>
-                        <option value="1">Bench</option>
-                        <option value="2">Squat</option>
-                        <option value="3">Deadlift</option>
-                    </select>
-                </div>
-            </fieldset>
+            <p className="new-goal-instructions">Input your goal weight for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts</p>
             <h4 className="new-goal-lists">Enter weight for selected lift</h4>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="bench">Bench</label>
-                    <input type="text" id="bench" required autoFocus className="newGoal-input-field" placeholder="--" disabled/>
+                    <input onChange={handleInputChange} type="text" id="bench" required autoFocus className="newGoal-input-field" placeholder="--"/>
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="squat">Squat</label>
-                    <input type="text" id="squat" required autoFocus className="newGoal-input-field" placeholder="--" disabled/>
+                    <input type="text" onChange={handleInputChange} id="squat" required autoFocus className="newGoal-input-field" placeholder="--"/>
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="deadlift">Deadlift</label>
-                    <input type="text" id="deadlift" required autoFocus className="newGoal-input-field" placeholder="--" disabled/>
+                    <input type="text" onChange={handleInputChange} id="deadlift" required autoFocus className="newGoal-input-field" placeholder="--"/>
                 </div>
             </fieldset>
-            <button type="button" className="new-goal-submit">Create</button>
+            <button type="button" className="new-goal-submit">Set</button>
         </form>
     )
 }

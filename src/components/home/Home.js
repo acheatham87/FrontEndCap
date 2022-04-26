@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css"
-// import { ifBench, ifSquat, ifDeadlift } from "../helperFunctions/weightCalculator";
-
-// console.log(ifBench(155))
-// console.log(ifSquat(215))
-// console.log(ifDeadlift(250))
 
 export const Home = () => {
     const [userName, setUserName] = useState("")

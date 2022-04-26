@@ -60,7 +60,7 @@
   "lifts": [
     {
       "id": 1,
-      "name": "Bench", 
+      "name": "Bench",
       "description": "The bench press is a compound exercise that targets the muscles of the upper body. It involves lying on a bench and pressing weight upward using either a barbell or a pair of dumbbells. During a bench press, you lower the weight down to chest level and then press upwards while extending your arms.",
       "embed": "https://www.youtube.com/embed/SCVCLChPQFY"
     },

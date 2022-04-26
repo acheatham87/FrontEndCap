@@ -7,13 +7,16 @@ import { CreateGoal } from "./goals/CreateGoal";
 import { Home } from "./home/Home"
 import { LiftDetails } from "./lifts/LiftDetails";
 
+//function to control routing within the app
 export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
     const PrivateOutlet = () => {
+        //checks authentication, if none found, reroutes to login
         return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
     }
     return (
         <>
         <Routes>
+            {/* sets the contained routes to private and user must be authenticated to navigate into */}
             <Route path="/" element={<PrivateOutlet/>} >
                 <Route path='/Home' element={<Home/>} />
                 <Route path="/Achievements" element={<Achievements />} />
