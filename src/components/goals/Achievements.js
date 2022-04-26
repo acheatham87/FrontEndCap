@@ -21,9 +21,9 @@ export const Achievements = () => {
 
     return (
         <>
-            <div className="goal-list">
+            <div className="achievement-list">
                 <h2> Your Achievments </h2>
-                <div className="goal-list-content">
+                <div className="achievement-list-content">
                     {goals.map(g => <GoalCard
                              key={g.id}
                              goal={g}/>                       

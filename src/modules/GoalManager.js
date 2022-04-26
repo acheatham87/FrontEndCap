@@ -37,4 +37,4 @@ export const updateGoal  = (editedGoal) => {
       },
       body: JSON.stringify(editedGoal)
     }).then(data => data.json());
-  }
+}

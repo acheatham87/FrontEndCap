@@ -26,7 +26,8 @@
       "userBench": 175,
       "userSquat": 273,
       "userDeadlift": 300,
-      "timestamp": 0
+      "timestamp": 0,
+      "completed": false
     },
     {
       "id": 2,
@@ -34,7 +35,8 @@
       "userBench": 155,
       "userSquat": 241,
       "userDeadlift": 265,
-      "timestamp": 0
+      "timestamp": 0,
+      "completed": true
     },
     {
       "id": 4,
@@ -42,7 +44,8 @@
       "userBench": 135,
       "userSquat": 210,
       "userDeadlift": 231,
-      "timestamp": 0
+      "timestamp": 0,
+      "completed": true
     },
     {
       "id": 3,
@@ -50,27 +53,28 @@
       "userBench": 75,
       "userSquat": 125,
       "userDeadlift": 137,
-      "timestamp": 0
+      "timestamp": 0,
+      "completed": false
     }
   ],
   "lifts": [
     {
       "id": 1,
-      "name": "bench", 
+      "name": "Bench", 
       "description": "The bench press is a compound exercise that targets the muscles of the upper body. It involves lying on a bench and pressing weight upward using either a barbell or a pair of dumbbells. During a bench press, you lower the weight down to chest level and then press upwards while extending your arms.",
-      "embed": "https://www.youtube.com/embed/lyscfsZ03u8?list=TLGGP9dXNHj5AKYxNDA0MjAyMg"
+      "embed": "https://www.youtube.com/embed/SCVCLChPQFY"
     },
     {
       "id": 2,
-      "name": "squat",
+      "name": "Squat",
       "description": "A barbell squat, also known as a barbell back squat, is a compound exercise that activates muscle groups throughout your lower body, including your hamstrings, glutes, and lower back muscles.",
-      "embed": "https://www.youtube.com/embed/OyFq2SbhYTk"
+      "embed": "https://www.youtube.com/embed/QmZAiBqPvZw"
     },
     {
       "id": 3,
-      "name": "deadlift",
+      "name": "Deadlift",
       "description": "The deadlift is a movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement. Some benefits of performing deadlifts include strengthening and gaining more definition in your upper and lower back, glutes, and hamstrings.",
-      "embed": "https://www.youtube.com/embed/3oMjoOm5O18"
+      "embed": "https://www.youtube.com/embed/1ZXobu7JvvE"
     }
   ]
 }
