@@ -19,11 +19,8 @@ export const Level = () => {
 
     return (
         <>
-        <NavBar clearUser={clearUser} 
-            isAuthenticated={isAuthenticated}/>
-        <ApplicationViews setAuthUser={setAuthUser} 
-            isAuthenticated={isAuthenticated}
-            setIsAuthenticated={setIsAuthenticated}/>
-            </>
+        <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated}/>
+        <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated}/>
+        </>
     )
 }

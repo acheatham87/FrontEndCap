@@ -88,23 +88,9 @@ export const Register = () => {
 						onChange={handleInputChange}
 					/>
 				</fieldset>
-                {/* <fieldset>
-					<label htmlFor="gender"> Gender </label>
-					<input
-						type="gender"
-						name="gender"
-						id="gender"
-						className="form-control"
-						placeholder="Gender"
-						required
-						autoFocus
-						value={registerUser.gender}
-						onChange={handleInputChange}
-					/>
-				</fieldset> */}
 				<fieldset>
                 	<div>
-						{/* <label htmlFor="gender">Gender</label> */}
+						<label htmlFor="gender">Gender</label>
 						<select value={registerUser.gender} name="gender" id="gender" onChange={handleInputChange} className="form-control" >
 							<option value="0">Select a gender</option>
 								<option>male</option>
