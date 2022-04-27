@@ -16,4 +16,4 @@ export const GoalCard = ({ goal, handleDeleteGoal }) => {
             <button type="button" className='completed-goal-card-delete' onClick={() => handleDeleteGoal(goal.id, currentUser)}>Delete</button>
         </div>
     )
-}
+}   

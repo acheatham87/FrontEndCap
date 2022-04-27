@@ -15,10 +15,6 @@ export const DisplayCurrentGoals = () => {
     }
 
     const handleCompleted = (goal, currentUser) => {
-        // if (goal.completed == false) {
-        //     goal.completed == true
-        // }
-
         goal.completed === true ? goal.completed = false : goal.completed = true;
         updateGoal(goal).then(() => getCurrentGoals(currentUser).then(setGoals))
     }

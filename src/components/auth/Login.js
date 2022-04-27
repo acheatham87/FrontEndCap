@@ -49,6 +49,7 @@ export const Login = ({setAuthUser}) => {
 			<section>
 				<form className="form--login" onSubmit={handleLogin}>
 					<h1>Level</h1>
+					<h3>Help you achieve proportional strength through weight training </h3>
 					<h2>Sign In</h2>
 					<fieldset>
 						<label htmlFor="inputEmail"> Email Address</label>

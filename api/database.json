@@ -36,83 +36,11 @@
     },
     {
       "userId": 1,
-      "userBench": 155,
-      "userSquat": 242,
-      "userDeadlift": 266,
-      "completed": true,
-      "id": 3
-    },
-    {
-      "userId": 2,
-      "userBench": 45,
-      "userSquat": 75,
-      "userDeadlift": 83,
-      "completed": true,
-      "id": 4
-    },
-    {
-      "userId": 2,
-      "userBench": 65,
-      "userSquat": 109,
-      "userDeadlift": 119,
-      "completed": true,
-      "id": 5
-    },
-    {
-      "userId": 2,
-      "userBench": 95,
-      "userSquat": 159,
-      "userDeadlift": 175,
-      "completed": true,
-      "id": 6
-    },
-    {
-      "userId": 2,
-      "userBench": 115,
-      "userSquat": 192,
-      "userDeadlift": 211,
-      "completed": true,
-      "id": 7
-    },
-    {
-      "userId": 2,
-      "userBench": 95,
-      "userSquat": 159,
-      "userDeadlift": 175,
+      "userBench": 125,
+      "userSquat": 195,
+      "userDeadlift": 215,
       "completed": false,
-      "id": 8
-    },
-    {
-      "userId": 4,
-      "userBench": 153,
-      "userSquat": 255,
-      "userDeadlift": 281,
-      "completed": false,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "userBench": 185,
-      "userSquat": 289,
-      "userDeadlift": 317,
-      "completed": true,
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "userBench": 165,
-      "userSquat": 257,
-      "userDeadlift": 283,
-      "completed": true,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "userBench": 175,
-      "userSquat": 273,
-      "userDeadlift": 300,
-      "completed": false,
-      "id": 12
+      "id": 2
     }
   ],
   "lifts": [
