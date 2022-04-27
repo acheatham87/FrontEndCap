@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Achievements.css"
-import { getAllGoals } from "../../modules/GoalManager";
+import { getCompletedGoals } from "../../modules/GoalManager";
 import { GoalCard } from "./GoalCard";
 
 export const Achievements = () => {
@@ -10,7 +10,7 @@ export const Achievements = () => {
     const currentUser = sessionStorage.getItem("level_user")
 
     const getGoals = (currentUser) => {
-        return getAllGoals(currentUser).then(g => {
+        return getCompletedGoals(currentUser).then(g => {
             setGoals(g)
         })
     }

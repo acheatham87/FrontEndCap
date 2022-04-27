@@ -21,46 +21,66 @@
   ],
   "goals": [
     {
-      "id": 1,
       "userId": 1,
-      "userBench": 175,
-      "userSquat": 273,
-      "userDeadlift": 300,
-      "timestamp": 0,
-      "completed": false
+      "userBench": 115,
+      "userSquat": 179,
+      "userDeadlift": 197,
+      "completed": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "userId": 1,
-      "userBench": 155,
-      "userSquat": 241,
-      "userDeadlift": 265,
-      "timestamp": 0,
-      "completed": true
-    },
-    {
-      "id": 4,
       "userId": 1,
       "userBench": 135,
-      "userSquat": 210,
-      "userDeadlift": 231,
-      "timestamp": 0,
-      "completed": true
+      "userSquat": 211,
+      "userDeadlift": 232,
+      "completed": true,
+      "id": 2
     },
     {
-      "id": 3,
+      "userId": 1,
+      "userBench": 155,
+      "userSquat": 242,
+      "userDeadlift": 266,
+      "completed": false,
+      "id": 3
+    },
+    {
       "userId": 2,
-      "userBench": 75,
-      "userSquat": 125,
-      "userDeadlift": 137,
-      "timestamp": 0,
-      "completed": false
+      "userBench": 45,
+      "userSquat": 75,
+      "userDeadlift": 83,
+      "completed": true,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "userBench": 65,
+      "userSquat": 109,
+      "userDeadlift": 119,
+      "completed": true,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "userBench": 95,
+      "userSquat": 159,
+      "userDeadlift": 175,
+      "completed": true,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "userBench": 115,
+      "userSquat": 192,
+      "userDeadlift": 211,
+      "completed": false,
+      "id": 7
     }
   ],
   "lifts": [
     {
       "id": 1,
-      "name": "Bench", 
+      "name": "Bench",
       "description": "The bench press is a compound exercise that targets the muscles of the upper body. It involves lying on a bench and pressing weight upward using either a barbell or a pair of dumbbells. During a bench press, you lower the weight down to chest level and then press upwards while extending your arms.",
       "embed": "https://www.youtube.com/embed/SCVCLChPQFY"
     },

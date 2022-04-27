@@ -1,29 +1,31 @@
 import React from "react";
 
-export const ifBench = (val) => {
+export const ratio = (g) => {
+    if (g === "male") {
+        return 1.56
+    }
+    else if (g === "female") {
+        return 1.67
+    }    
+}
+
+export const ifBench = (val, gender) => {
     let bench = val
-    let squat = val * 1.56
+    let squat = val * ratio(gender)
     let deadlift = squat * 1.1
-    return [`Bench: ${bench}`, `Squat: ${Math.round(squat)}`, `Deadlift: ${Math.round(deadlift)}`]
+    return [`${bench}`, `${Math.round(squat)}`, `${Math.round(deadlift)}`]
 }
 
-export const ifSquat = (val) => {
+export const ifSquat = (val, gender) => {
     let squat = val;
-    let bench = val / 1.56;
+    let bench = val / ratio(gender);
     let deadlift = val * 1.1;
-    return [`Bench: ${Math.round(bench)}`, `Squat: ${squat}`, `Deadlift: ${Math.round(deadlift)}`]
+    return [`${Math.round(bench)}`, `${squat}`, `${Math.round(deadlift)}`]
 }
 
-// export const ifSquat = (val) => {
-//     let squat = val
-//     let bench = val / 1.56
-//     let deadlift = val * 1.1
-//     return [`Bench: ${Math.round(bench)}`, `Squat: ${squat}` `Deadlift: ${Math.round(deadlift)}`]
-// }
-
-export const ifDeadlift = (val) => {
+export const ifDeadlift = (val, gender ) => {
     let deadlift = val
     let squat = val / 1.1
-    let bench = squat / 1.56
-    return [`Bench: ${Math.round(bench)}`, `Squat: ${Math.round(squat)}`, `Deadlift: ${deadlift}`]
+    let bench = squat / ratio(gender)
+    return [`${Math.round(bench)}`, `${Math.round(squat)}`, `${deadlift}`]
 }
