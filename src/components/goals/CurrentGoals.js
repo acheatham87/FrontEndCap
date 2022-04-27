@@ -2,8 +2,9 @@ import React from 'react';
 import "./CurrentGoals.css"; 
 
 //creates the indivual card for each set goal
-export const CurrentGoals = ({ goal }) => {    
-    
+export const CurrentGoals = ({ goal, handleCompleted }) => { 
+    const currentUser = sessionStorage.getItem("level_user") 
+        
     return(
         <div className="current-goal-card">
             <h3 className='current-goal-card-header'>Active Goals</h3>
@@ -13,7 +14,7 @@ export const CurrentGoals = ({ goal }) => {
                 <p className="current-goal-card-deadlift"> Deadlift: {goal.userDeadlift}lbs </p>
             </div>
             <button type='button' className='current-goal-card-edit'>Edit</button>
-            <button type="button" className='current-goal-card-completed'>Achieved</button>
+            <button type="button" className='current-goal-card-completed' onClick={() => handleCompleted(goal, currentUser)} >Completed</button>
         </div>
     )
 }

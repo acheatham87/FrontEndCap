@@ -39,7 +39,7 @@
       "userBench": 155,
       "userSquat": 242,
       "userDeadlift": 266,
-      "completed": false,
+      "completed": true,
       "id": 3
     },
     {
@@ -89,6 +89,30 @@
       "userDeadlift": 281,
       "completed": false,
       "id": 9
+    },
+    {
+      "userId": 1,
+      "userBench": 185,
+      "userSquat": 289,
+      "userDeadlift": 317,
+      "completed": true,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "userBench": 165,
+      "userSquat": 257,
+      "userDeadlift": 283,
+      "completed": true,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "userBench": 175,
+      "userSquat": 273,
+      "userDeadlift": 300,
+      "completed": false,
+      "id": 12
     }
   ],
   "lifts": [

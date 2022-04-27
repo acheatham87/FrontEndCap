@@ -67,7 +67,6 @@ export const CreateGoal = () => {
                 break;
         }
     }
-    console.log(bench, squat, deadlift)
 
     const handleSetGoal = (event) => {
         event.preventDefault()
