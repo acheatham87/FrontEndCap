@@ -17,6 +17,12 @@
       "name": "Grant Geasley",
       "gender": "male",
       "id": 3
+    },
+    {
+      "email": "jenny@taitt.com",
+      "name": "Jenny Taitt",
+      "gender": "female",
+      "id": 4
     }
   ],
   "goals": [
@@ -27,14 +33,6 @@
       "userDeadlift": 197,
       "completed": true,
       "id": 1
-    },
-    {
-      "userId": 1,
-      "userBench": 135,
-      "userSquat": 211,
-      "userDeadlift": 232,
-      "completed": true,
-      "id": 2
     },
     {
       "userId": 1,
@@ -73,7 +71,7 @@
       "userBench": 115,
       "userSquat": 192,
       "userDeadlift": 211,
-      "completed": false,
+      "completed": true,
       "id": 7
     },
     {
@@ -83,6 +81,14 @@
       "userDeadlift": 175,
       "completed": false,
       "id": 8
+    },
+    {
+      "userId": 4,
+      "userBench": 153,
+      "userSquat": 255,
+      "userDeadlift": 281,
+      "completed": false,
+      "id": 9
     }
   ],
   "lifts": [
