@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { DisplayCurrentGoals } from "../goals/DisplayCurrentGoals";
 import "./Home.css"
 
 export const Home = () => {
@@ -11,9 +12,8 @@ export const Home = () => {
 
     return(  
         <>
-        <h2 className="welcome">Welcome, {userName}</h2>
-        <h3> Your current goals:</h3>
-
+            <h2 className="welcome">Welcome, {userName}</h2>
+            <DisplayCurrentGoals />
         </>
         )
 }

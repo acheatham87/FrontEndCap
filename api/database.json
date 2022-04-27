@@ -75,6 +75,14 @@
       "userDeadlift": 211,
       "completed": false,
       "id": 7
+    },
+    {
+      "userId": 2,
+      "userBench": 95,
+      "userSquat": 159,
+      "userDeadlift": 175,
+      "completed": false,
+      "id": 8
     }
   ],
   "lifts": [
