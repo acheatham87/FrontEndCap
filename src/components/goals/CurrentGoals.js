@@ -14,7 +14,9 @@ export const CurrentGoals = ({ goal, handleCompleted }) => {
                 <p className="current-goal-card-deadlift"> Deadlift: {goal.userDeadlift}lbs </p>
             </div>
             <button type='button' className='current-goal-card-edit'>Edit</button>
-            <button type="button" className='current-goal-card-completed' onClick={() => handleCompleted(goal, currentUser)} >Completed</button>
+            <button type="button" className='current-goal-card-completed' onClick={() => {
+                
+                handleCompleted(goal, currentUser)}} >Completed</button>
         </div>
     )
 }
