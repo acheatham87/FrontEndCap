@@ -4,7 +4,7 @@ import { getCurrentGoals, updateGoal } from "../../modules/GoalManager";
 import { CurrentGoals } from "./CurrentGoals";
 import { useNavigate } from "react-router-dom";
 
-export const DisplayCurrentGoals = () => {
+export const DisplayCurrentGoals = ({setAllComplete}) => {
 
     const [goals, setGoals] = useState([])
     const currentUser = sessionStorage.getItem("level_user")
@@ -24,7 +24,7 @@ export const DisplayCurrentGoals = () => {
     }
 
     useEffect(() => {
-        getGoals(currentUser);
+        getGoals(currentUser).then();
     }, [])
 
     return (
