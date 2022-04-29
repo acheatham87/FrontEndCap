@@ -1,0 +1,62 @@
+.edit-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.edit-modal.show {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.edit-modal-content {
+    width: 500px;
+    background-color: #fff;
+    transform: translateY(-200px);
+    transition: all 0.3s ease-in-out;
+}
+
+.edit-modal.show .edit-modal-content {
+    transform: translateY(0);
+}
+
+.edit-modal-header, .edit-modal-footer {
+    padding: 10px;
+}
+
+.edit-modal-title {
+    margin: 0;
+}
+
+.edit-modal-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.edit-modal.enter-done {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.edit-modal.exit {
+    opacity: 0;
+}
+
+.edit-modal.enter-done .edit-modal-content {
+    transform: translateY(0);
+}
+
+.edit-modal.exit .edit-modal-content {
+    transform: translateY(-200px);
+}
