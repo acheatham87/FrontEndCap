@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { ReactDOM } from "react";
 import { CSSTransition } from "react-transition-group";
+import { EditGoal } from "../goals/EditGoal";
 import "./EditModal.css"
 
-export const EditModal = props => {
+export const EditModal = (props) => {
 
     var ReactDOM = require('react-dom')
 
@@ -30,7 +31,7 @@ export const EditModal = props => {
                     <div className="edit-modal-header">
                         <h4 className="edit-modal-title">Edit Your Goal</h4>
                         <div className="edit-modal-body">
-                            Edit Content
+                            <EditGoal goalId={props.currentGoalId}/>
                         </div>
                         <div className="edit-modal-footer">
                             <button type="button" className="edit-save-button" onClick={props.onClose}>Save</button>

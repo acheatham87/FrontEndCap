@@ -18,7 +18,7 @@ export const CurrentGoals = ({ goal, handleCompleted }) => {
             <button type='button' className='current-goal-card-edit' onClick={() => setShow(true)}>Edit</button>
             <button type="button" className='current-goal-card-completed' onClick={() => {                
                 handleCompleted(goal, currentUser)}} >Completed</button>
-                <EditModal onClose={() => setShow(false)} show={show}/>
+                <EditModal currentGoalId={goal.id} onClose={() => setShow(false)} show={show}/>
         </div>
     )
 }
