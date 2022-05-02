@@ -35,25 +35,25 @@ export const EditGoal = ({goalId}) => {
                 squatInput.value = b[1]
                 deadliftInput.value = b[2]
                 setBench(b[0])
-                setSquat(b[1])
-                setDeadlift(b[2])
+                setSquat(Math.round(b[1]/5)*5)
+                setDeadlift(Math.round(b[2]/5)*5)
                 
                 break;
             case "userSquat":
                 let s = ifSquat(squatInput.value, gender)
                 benchInput.value = s[0]
                 deadliftInput.value = s[2]
-                setBench(s[0])
+                setBench(Math.round(s[0]/5)*5)
                 setSquat(s[1])
-                setDeadlift(s[2])
+                setDeadlift(Math.round(s[2]/5)*5)
 
                 break;
             case "userDeadlift":
                 let d = ifDeadlift(deadliftInput.value, gender)
                 benchInput.value = d[0]
                 squatInput.value = d[1]
-                setBench(d[0])
-                setSquat(d[1])
+                setBench(Math.round(d[0]/5)*5)
+                setSquat(Math.round(d[1]/5)*5)
                 setDeadlift(d[2])
 
                 break;
