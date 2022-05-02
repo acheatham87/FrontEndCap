@@ -76,7 +76,9 @@ export const EditGoal = ({goalId}) => {
             completed: goal.completed           
         }
 
-        updateGoal(editedGoal)
+        updateGoal(editedGoal).then(() => {
+            window.location.reload()
+        })
     }
 
     useEffect(() => {

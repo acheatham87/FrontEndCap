@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./DisplayCurrentGoals.css"
 import { getCurrentGoals, updateGoal } from "../../modules/GoalManager";
 import { CurrentGoals } from "./CurrentGoals";
-import { useNavigate } from "react-router-dom";
 
-export const DisplayCurrentGoals = ({setAllComplete}) => {
+export const DisplayCurrentGoals = () => {
 
     const [goals, setGoals] = useState([])
     const currentUser = sessionStorage.getItem("level_user")
-    const navigate = useNavigate()
 
     const getGoals = (currentUser) => {
         return getCurrentGoals(currentUser).then(g => {

@@ -16,19 +16,19 @@
   "goals": [
     {
       "userId": 1,
-      "userBench": 160,
-      "userSquat": 250,
-      "userDeadlift": 275,
+      "userBench": 190,
+      "userSquat": 295,
+      "userDeadlift": 325,
       "completed": false,
-      "id": 1
+      "id": 2
     },
     {
       "userId": 1,
-      "userBench": 175,
-      "userSquat": 273,
-      "userDeadlift": 300,
+      "userBench": 290,
+      "userSquat": 450,
+      "userDeadlift": 495,
       "completed": false,
-      "id": 2
+      "id": 3
     }
   ],
   "lifts": [
