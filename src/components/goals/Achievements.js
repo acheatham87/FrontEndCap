@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Achievements.css"
 import { getCompletedGoals, deleteGoal } from "../../modules/GoalManager";
-import { GoalCard } from "./GoalCard";
+import { AchievementCard } from "./AchievementCard";
 
 export const Achievements = () => {
 
@@ -27,7 +27,7 @@ export const Achievements = () => {
             <div className="achievement-list">
                 <h2> Your Achievments </h2>
                 <div className="achievement-list-content">
-                    {goals.map(g => <GoalCard
+                    {goals.map(g => <AchievementCard
                              key={g.id}
                              goal={g}
                              handleDeleteGoal={handleDeleteGoal}/>                       

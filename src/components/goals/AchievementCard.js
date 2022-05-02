@@ -1,8 +1,8 @@
 import React from 'react';
-import "./GoalCard.css"; 
+import "./AchievementCard.css"
 
 //creates the indivual card for each set goal
-export const GoalCard = ({ goal, handleDeleteGoal }) => {  
+export const AchievementCard = ({ goal, handleDeleteGoal }) => {  
     const currentUser = sessionStorage.getItem("level_user")  
     
     return(

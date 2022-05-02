@@ -18,6 +18,7 @@ export const DisplayCurrentGoals = ({setAllComplete}) => {
 
     const handleCompleted = (goal, currentUser) => {
         goal.completed === true ? goal.completed = false : goal.completed = true;
+        goal.completedTimestamp = new Date()
         updateGoal(goal).then(() => getCurrentGoals(currentUser).then(setGoals).then(() => {
             window.location.reload()
         }))
