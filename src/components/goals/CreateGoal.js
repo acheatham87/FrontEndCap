@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import { addGoal } from "../../modules/GoalManager"
 import { ifBench, ifSquat, ifDeadlift } from "../helperFunctions/weightCalculator"
@@ -16,8 +16,6 @@ export const CreateGoal = () => {
     const [bench, setBench] = useState('')
     const [squat, setSquat] = useState('')
     const [deadlift, setDeadlift] = useState('')
-
-    const [isLoading, setIsLoading] = useState(false)
 
     const navigate = useNavigate()
 

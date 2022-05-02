@@ -11,8 +11,8 @@ export const getCurrentGoals = (currentUser) => {
 }    
 
 //fetches a single goal by its id
-export const getGoalById = (id) => {
-    return fetch(`${remoteURL}/goals/${id}?_expand=user`).then(res => res.json())
+export const getGoalById = (goalId) => {
+    return fetch(`${remoteURL}/goals/${goalId}`).then(res => res.json())
 }
 
 //allows you to delte a goal out of the json file by targeting id
