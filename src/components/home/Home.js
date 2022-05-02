@@ -9,6 +9,13 @@ export const Home = () => {
     const navigate = useNavigate()
     const [currentGoals, setCurrentGoals] = useState([])
     const currentUser = sessionStorage.getItem("level_user")
+    const [updateHome, setUpdateHome] = useState()
+
+    const handleUpdateHome = (currentUser) => {
+        return getCurrentGoals(currentUser).then(g => {
+            setCurrentGoals(g)
+        })
+    }
 
     const handleSetClick = (event) => {
         event.preventDefault()
@@ -25,7 +32,7 @@ export const Home = () => {
             <button type="button" className="new-profile-button" onClick={handleSetClick}>Set your Goals</button></> ,
         <>
             <h2 className="welcome">Welcome, {userName}</h2>
-            <DisplayCurrentGoals />
+            <DisplayCurrentGoals handleUpdateHome={handleUpdateHome}/>
         </>
     ]
 
@@ -41,6 +48,10 @@ export const Home = () => {
 
     useEffect(() => {
         getGoals(currentUser)
+    }, [])
+
+    useEffect(() => {
+        handleUpdateHome(currentUser)
     }, [])
 
     return( 
