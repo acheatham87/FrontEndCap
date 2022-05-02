@@ -29,7 +29,7 @@ export const EditModal = (props) => {
             <div className={`edit-modal ${props.show ?'show' : ''}`} onClick={props.onClose}>
                 <div className="edit-modal-content" onClick={e => e.stopPropagation()}>
                     <div className="edit-modal-header">
-                        <h4 className="edit-modal-title">Edit Your Goal</h4>
+                        <h4 className="edit-modal-title">Edit Your Goals</h4>
                         <div className="edit-modal-body">
                             <EditGoal goalId={props.currentGoalId}/>
                         </div>
