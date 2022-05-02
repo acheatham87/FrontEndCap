@@ -3,7 +3,7 @@ import "./DisplayCurrentGoals.css"
 import { getCurrentGoals, updateGoal } from "../../modules/GoalManager";
 import { CurrentGoals } from "./CurrentGoals";
 
-export const DisplayCurrentGoals = () => {
+export const DisplayCurrentGoals = ({handleUpdateHome}) => {
 
     const [goals, setGoals] = useState([])
     const currentUser = sessionStorage.getItem("level_user")
@@ -18,7 +18,7 @@ export const DisplayCurrentGoals = () => {
         goal.completed === true ? goal.completed = false : goal.completed = true;
         goal.completedTimestamp = new Date()
         updateGoal(goal).then(() => getCurrentGoals(currentUser).then(setGoals).then(() => {
-            window.location.reload()
+           handleUpdateHome(currentUser)
         }))
     }
 
@@ -35,6 +35,7 @@ export const DisplayCurrentGoals = () => {
                              key={g.id}
                              goal={g}
                              handleCompleted={handleCompleted}
+                             handleUpdateHome={handleUpdateHome}
                             />                       
                     )}
                 </div>
