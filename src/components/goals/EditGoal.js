@@ -17,6 +17,9 @@ export const EditGoal = ({props}) => {
     const [squat, setSquat] = useState('')
     const [deadlift, setDeadlift] = useState('')
     const [isLoading, setIsLoading] = useState(false);
+    const currentUser = sessionStorage.getItem("level_user")
+
+    console.log(props.handleUpdateHome)
 
     const handleFieldChange = g => {
 
