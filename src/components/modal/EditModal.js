@@ -31,10 +31,7 @@ export const EditModal = (props) => {
                     <div className="edit-modal-header">
                         <h4 className="edit-modal-title">Edit Your Goals</h4>
                         <div className="edit-modal-body">
-                            <EditGoal goalId={props.currentGoalId}/>
-                        </div>
-                        <div className="edit-modal-footer">
-                            <button type="button" className="edit-save-button" onClick={props.onClose}>Save</button>
+                            <EditGoal props={props}/>
                         </div>
                     </div>
                 </div>

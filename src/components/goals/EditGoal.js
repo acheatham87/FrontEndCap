@@ -4,7 +4,7 @@ import { ifBench, ifSquat, ifDeadlift } from "../helperFunctions/weightCalculato
 import "./EditGoal.css"
 
 
-export const EditGoal = ({goalId}) => {
+export const EditGoal = ({props}) => {
     const [goal, setGoal] = useState({
         userId: "",
         userBench: "",
@@ -68,7 +68,7 @@ export const EditGoal = ({goalId}) => {
         setIsLoading(true);
 
         const editedGoal = {
-            id: goalId,
+            id: goal.id,
             userId: goal.userId,
             userBench: parseInt(bench),
             userSquat: parseInt(squat),
@@ -77,12 +77,13 @@ export const EditGoal = ({goalId}) => {
         }
 
         updateGoal(editedGoal).then(() => {
+            props.onClose()
             window.location.reload()
         })
     }
 
     useEffect(() => {
-        getGoalById(goalId)
+        getGoalById(props.currentGoalId)
         .then(goal => {
             setGoal(goal);
             setIsLoading(false)

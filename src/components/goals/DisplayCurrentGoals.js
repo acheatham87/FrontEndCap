@@ -35,7 +35,6 @@ export const DisplayCurrentGoals = ({handleUpdateHome}) => {
                              key={g.id}
                              goal={g}
                              handleCompleted={handleCompleted}
-                             handleUpdateHome={handleUpdateHome}
                             />                       
                     )}
                 </div>
