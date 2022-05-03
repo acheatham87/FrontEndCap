@@ -16,21 +16,29 @@
   "goals": [
     {
       "userId": 1,
-      "userBench": 170,
-      "userSquat": 265,
-      "userDeadlift": 290,
+      "userBench": 200,
+      "userSquat": 315,
+      "userDeadlift": 345,
       "completed": true,
-      "id": 10,
-      "completedTimestamp": "2022-05-02T23:47:17.379Z"
+      "id": 15,
+      "completedTimestamp": "2022-05-03T00:06:40.755Z"
     },
     {
       "userId": 1,
-      "userBench": 175,
-      "userSquat": 275,
-      "userDeadlift": 305,
+      "userBench": 185,
+      "userSquat": 290,
+      "userDeadlift": 315,
       "completed": true,
-      "id": 11,
-      "completedTimestamp": "2022-05-02T23:46:55.660Z"
+      "id": 16,
+      "completedTimestamp": "2022-05-03T00:06:39.963Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 200,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": false,
+      "id": 17
     }
   ],
   "lifts": [
