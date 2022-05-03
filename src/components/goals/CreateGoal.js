@@ -86,7 +86,7 @@ export const CreateGoal = () => {
      return (
         <form className="new-goal-form">
             <h2 className="new-goal-header">Create a New Goal</h2>
-            <p className="new-goal-instructions">Input your goal weight (in lbs) for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts.</p>
+            <h4 className="new-goal-instructions">Input your goal weight (in lbs) for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts.</h4>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="bench">Bench</label>

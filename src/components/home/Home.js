@@ -29,7 +29,8 @@ export const Home = () => {
             <br/><br/>How it works:<br/>
             We ask you to enter one of your known lifts weight.  We then take that weight and calculate ideal goal weights for other major lifts to help you build a balanced body.
             <br/><br/>Click on the button below to get started</h4>
-            <button type="button" className="new-profile-button" onClick={handleSetClick}>Set your Goals</button></> ,
+            <button type="button" className="new-profile-button" onClick={handleSetClick}>Set your Goals</button>
+        </> ,
         <>
             <h2 className="welcome">Welcome, {userName}</h2>
             <DisplayCurrentGoals handleUpdateHome={handleUpdateHome}/>
