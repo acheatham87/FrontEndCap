@@ -7,6 +7,7 @@ import "./EditModal.css"
 export const EditModal = (props) => {
 
     var ReactDOM = require('react-dom')
+    const currentUser = sessionStorage.getItem("level_user")
 
     const closeOnEscapeKeyDown = (e) => {
         if ((e.charCode || e.keyCode) === 27) {
