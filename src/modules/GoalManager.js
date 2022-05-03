@@ -1,10 +1,5 @@
 const remoteURL = "http://localhost:8088"
 
-//fetches completed goals associated with the currently logged in user
-export const getCompletedGoals = (currentUser) => {
-    return fetch(`${remoteURL}/goals?userId=${currentUser}&completed=true&_sort=completedTimestamp&_order=desc`).then(res => res.json())
-}    
-
 //fetches active goals associated with the currently logged in user
 export const getCurrentGoals = (currentUser) => {
   return fetch(`${remoteURL}/goals?userId=${currentUser}&completed=false&_sort=id&_order=desc`).then(res => res.json())

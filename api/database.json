@@ -13,7 +13,178 @@
       "id": 2
     }
   ],
-  "goals": [],
+  "goals": [
+    {
+      "userId": 1,
+      "userBench": 200,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": true,
+      "id": 1,
+      "completedTimestamp": "2022-05-03T16:17:47.538Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 195,
+      "userSquat": 305,
+      "userDeadlift": 335,
+      "completed": true,
+      "id": 2,
+      "completedTimestamp": "2022-05-03T16:17:42.521Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 75,
+      "userSquat": 115,
+      "userDeadlift": 130,
+      "completed": true,
+      "id": 3,
+      "completedTimestamp": "2022-05-03T16:22:41.435Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 115,
+      "userSquat": 180,
+      "userDeadlift": 195,
+      "completed": true,
+      "id": 5,
+      "completedTimestamp": "2022-05-03T16:22:45.057Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 155,
+      "userSquat": 240,
+      "userDeadlift": 265,
+      "completed": true,
+      "id": 7,
+      "completedTimestamp": "2022-05-03T16:22:47.216Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 75,
+      "userSquat": 125,
+      "userDeadlift": 140,
+      "completed": true,
+      "id": 8,
+      "completedTimestamp": "2022-05-03T16:24:35.192Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 115,
+      "userSquat": 190,
+      "userDeadlift": 210,
+      "completed": true,
+      "id": 10,
+      "completedTimestamp": "2022-05-03T16:24:33.929Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 155,
+      "userSquat": 260,
+      "userDeadlift": 285,
+      "completed": true,
+      "id": 12,
+      "completedTimestamp": "2022-05-03T16:24:32.304Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 190,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": true,
+      "id": 14,
+      "completedTimestamp": "2022-05-03T16:37:27.248Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 155,
+      "userSquat": 260,
+      "userDeadlift": 285,
+      "completed": true,
+      "id": 15,
+      "completedTimestamp": "2022-05-03T18:21:50.057Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 190,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": true,
+      "id": 16,
+      "completedTimestamp": "2022-05-03T18:42:11.416Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 165,
+      "userSquat": 275,
+      "userDeadlift": 300,
+      "completed": true,
+      "id": 17,
+      "completedTimestamp": "2022-05-03T18:52:06.792Z"
+    }
+  ],
+  "achievements": [
+    {
+      "userId": 1,
+      "goalId": 2,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "goalId": 1,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "goalId": 3,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "goalId": 5,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "goalId": 7,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "goalId": 12,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "goalId": 10,
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "goalId": 8,
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "goalId": 14,
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "goalId": 15,
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "goalId": 16,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "goalId": 17,
+      "id": 12
+    }
+  ],
   "lifts": [
     {
       "id": 1,

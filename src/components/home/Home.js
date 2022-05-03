@@ -12,9 +12,11 @@ export const Home = () => {
     const [updateHome, setUpdateHome] = useState()
 
     const handleUpdateHome = (currentUser) => {
-        return getCurrentGoals(currentUser).then(g => {
+        getCurrentGoals(currentUser).then(g => {
+            // debugger
             setCurrentGoals(g)
-        })
+            console.log("this is the thing")
+        })    
     }
 
     const handleSetClick = (event) => {
@@ -33,26 +35,28 @@ export const Home = () => {
         </> ,
         <>
             <h2 className="welcome">Welcome, {userName}</h2>
-            <DisplayCurrentGoals handleUpdateHome={handleUpdateHome}/>
+            <DisplayCurrentGoals handleUpdateHome={handleUpdateHome}
+            currentGoals={currentGoals}/>
         </>
     ]
 
-    const getGoals = (currentUser) => {
-        return getCurrentGoals(currentUser).then(g => {
-            setCurrentGoals(g)
-        })
-    }
+    // const getGoals = (currentUser) => {
+    //     return getCurrentGoals(currentUser).then(g => {
+    //         setCurrentGoals(g)
+    //     })
+    // }
 
     useEffect(() => {
         setUserName(JSON.parse(sessionStorage.getItem("level_user_name")).split(" ")[0]);
     }, [])
 
-    useEffect(() => {
-        getGoals(currentUser)
-    }, [])
+    // useEffect(() => {
+    //     getGoals(currentUser)
+    // }, [])
 
     useEffect(() => {
         handleUpdateHome(currentUser)
+        console.log("this is the useEffect for this")
     }, [])
 
     return( 

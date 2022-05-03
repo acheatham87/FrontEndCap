@@ -3,7 +3,7 @@ import { EditModal } from '../modal/EditModal';
 import "./CurrentGoals.css"; 
 
 //creates the indivual card for each set goal
-export const CurrentGoals = ({ goal, handleCompleted, handleUpdateHome }) => { 
+export const CurrentGoals = ({ goal, handleCompleted, handleUpdateHome, handleDeleteGoal }) => { 
     const currentUser = sessionStorage.getItem("level_user") 
     const [show, setShow] = useState(false)
         
@@ -16,6 +16,7 @@ export const CurrentGoals = ({ goal, handleCompleted, handleUpdateHome }) => {
                 <p className="current-goal-card-deadlift"> Deadlift: {goal.userDeadlift}lbs </p>
             </div>
             <button type='button' className='current-goal-card-edit' onClick={() => setShow(true)}>Edit</button>
+            <button type='button' className='current-goal-card-delete' onClick={() => {handleDeleteGoal(goal.id, currentUser)}} >Delete</button>
             <button type="button" className='current-goal-card-completed' onClick={() => {                
                 handleCompleted(goal, currentUser)}} >Completed</button>
                 <EditModal currentGoalId={goal.id} 

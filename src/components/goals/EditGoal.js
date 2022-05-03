@@ -19,8 +19,6 @@ export const EditGoal = ({props}) => {
     const [isLoading, setIsLoading] = useState(false);
     const currentUser = sessionStorage.getItem("level_user")
 
-    console.log(props.handleUpdateHome)
-
     const handleFieldChange = g => {
 
         const gender = JSON.parse(sessionStorage.getItem("level_user_gender"))
@@ -79,9 +77,12 @@ export const EditGoal = ({props}) => {
             completed: goal.completed           
         }
 
-        updateGoal(editedGoal).then(() => {
+        updateGoal(editedGoal).then((b) => {
             props.onClose()
-            window.location.reload()
+            console.log(b)
+        }).then(() => {
+            props.handleUpdateHome(currentUser)
+            console.log("this is after the update")
         })
     }
 
@@ -90,6 +91,8 @@ export const EditGoal = ({props}) => {
         .then(goal => {
             setGoal(goal);
             setIsLoading(false)
+        }).then(() => {
+            console.log("this is after getting goal by ID")
         })
     }, [])
 
