@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
-import { Achievements } from "./goals/Achievements";
+import { Achievements } from "./achievements/Achievements";
 import { CreateGoal } from "./goals/CreateGoal";
 import { Home } from "./home/Home"
 import { LiftDetails } from "./lifts/LiftDetails";

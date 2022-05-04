@@ -3,14 +3,12 @@ import "./Achievements.css"
 import { getAchievementsByUserId } from "../../modules/AchievementManager";
 import { AchievementCard } from "./AchievementCard";
 
+
+
 export const Achievements = () => {
 
     const [achievements, setAchievements] = useState([])
     const currentUser = sessionStorage.getItem("level_user")
-    
-    // const handleDeleteAchievement = (id, currentUser) => {
-    //     deleteAchievement(id).then(() => getAchievements(currentUser).then(setAchievements))
-    // }
 
     const ifAchievements = [
         <>

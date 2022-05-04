@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ratio = (g) => {
     if (g === "male") {
         return 1.56

@@ -14,8 +14,6 @@ export const DisplayCurrentGoals = ({handleUpdateHome, currentGoals}) => {
             setGoals(g)
         })
     }
-
-    console.log(handleUpdateHome)  
     
     const handleCompleted = (goal, currentUser) => {
         goal.completed === true ? goal.completed = false : goal.completed = true;

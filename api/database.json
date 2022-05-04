@@ -121,6 +121,87 @@
       "completed": true,
       "id": 17,
       "completedTimestamp": "2022-05-03T18:52:06.792Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 200,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": true,
+      "id": 18,
+      "completedTimestamp": "2022-05-03T19:06:42.246Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 175,
+      "userSquat": 275,
+      "userDeadlift": 300,
+      "completed": true,
+      "id": 19,
+      "completedTimestamp": "2022-05-03T20:42:45.991Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 165,
+      "userSquat": 255,
+      "userDeadlift": 280,
+      "completed": true,
+      "id": 20,
+      "completedTimestamp": "2022-05-04T00:40:12.087Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 200,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": true,
+      "id": 21,
+      "completedTimestamp": "2022-05-04T00:42:46.176Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 155,
+      "userSquat": 240,
+      "userDeadlift": 265,
+      "completed": true,
+      "id": 22,
+      "completedTimestamp": "2022-05-04T00:43:41.312Z"
+    },
+    {
+      "userId": 2,
+      "userBench": 190,
+      "userSquat": 315,
+      "userDeadlift": 345,
+      "completed": true,
+      "id": 25,
+      "completedTimestamp": "2022-05-04T00:46:08.906Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 175,
+      "userSquat": 275,
+      "userDeadlift": 300,
+      "completed": true,
+      "id": 26,
+      "completedTimestamp": "2022-05-04T00:47:56.427Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 240,
+      "userSquat": 375,
+      "userDeadlift": 415,
+      "completed": true,
+      "id": 27,
+      "completedTimestamp": "2022-05-04T00:57:48.054Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 145,
+      "userSquat": 225,
+      "userDeadlift": 250,
+      "completed": true,
+      "id": 28,
+      "completedTimestamp": "2022-05-04T00:59:49.240Z"
     }
   ],
   "achievements": [
@@ -183,6 +264,51 @@
       "userId": 2,
       "goalId": 17,
       "id": 12
+    },
+    {
+      "userId": 1,
+      "goalId": 18,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "goalId": 19,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "goalId": 20,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "goalId": 21,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "goalId": 22,
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "goalId": 25,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "goalId": 26,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "goalId": 27,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "goalId": 28,
+      "id": 21
     }
   ],
   "lifts": [

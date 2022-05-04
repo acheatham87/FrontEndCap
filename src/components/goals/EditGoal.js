@@ -78,11 +78,8 @@ export const EditGoal = ({props}) => {
         }
 
         updateGoal(editedGoal).then((b) => {
-            props.onClose()
-            console.log(b)
-        }).then(() => {
+            props.onClose()}).then(() => {
             props.handleUpdateHome(currentUser)
-            console.log("this is after the update")
         })
     }
 
@@ -91,8 +88,6 @@ export const EditGoal = ({props}) => {
         .then(goal => {
             setGoal(goal);
             setIsLoading(false)
-        }).then(() => {
-            console.log("this is after getting goal by ID")
         })
     }, [])
 

@@ -1,5 +1,14 @@
+.nav {
+display: flex;
+}
+
 .navBar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
+
+.navLogo {
+    max-height: 5em;
 }
