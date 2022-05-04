@@ -35,12 +35,20 @@ export const Home = () => {
     const ifGoals = [  
         <>   
         {/* return if no goal are found on the fetch call       */}
-            <h2 className="welcome">Welcome, {userName}</h2>
-            <h4 className="new-user-message">Thank you for choosing LEVEL!  We are an app designed to help you achieve proportional strength through weight training.
-            <br/><br/>How it works:<br/>
-            We ask you to enter one of your known lifts weight.  We then take that weight and calculate ideal goal weights for other major lifts to help you build a balanced body.
-            <br/><br/>Click on the button below to get started</h4>
-            <button type="button" className="new-profile-button" onClick={handleSetClick}>Set your Goals</button>
+            <div className="noGoals-container">
+                <div className="noGoals-welcome-container">
+                    <h2 className="noGoals-welcome">Welcome, {userName}</h2>
+                </div>
+                <div className="noGoals-content-container">
+                    <h4 className="noGoals-message">Thank you for choosing LEVEL!  We are an app designed to help you achieve proportional strength through weight training.
+                    <br/><br/>How it works:<br/>
+                    We ask you to enter one of your known lifts weight.  We then take that weight and calculate ideal goal weights for other major lifts to help you build a balanced body.
+                    <br/><br/>Click on the button below to get started</h4>
+                </div>
+                <div className="noGoals-button-container">
+                    <button type="button" className="noGoals-button" onClick={handleSetClick}>Set your Goals</button>
+                </div>
+            </div>
         </> ,
         <>
         {/* return if goals are in the database.  Maps the returned goals onto individual goal "cards" */}

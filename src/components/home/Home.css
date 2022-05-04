@@ -1,0 +1,26 @@
+.noGoals-container {
+    margin-left: 10em;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,0.40);
+    height: fit-content;
+    width: fit-content;
+}
+
+.noGoals-welcome-container {
+
+}
+
+.noGoals-content-container{
+
+}
+
+.noGoals-message {
+
+}
+
+.noGoal-button {
+
+}

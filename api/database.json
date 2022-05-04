@@ -55,6 +55,24 @@
       "completed": true,
       "id": 4,
       "completedTimestamp": "2022-05-04T16:06:48.809Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 185,
+      "userSquat": 285,
+      "userDeadlift": 315,
+      "completed": true,
+      "id": 5,
+      "completedTimestamp": "2022-05-04T16:24:33.344Z"
+    },
+    {
+      "userId": 3,
+      "userBench": 115,
+      "userSquat": 190,
+      "userDeadlift": 210,
+      "completed": true,
+      "id": 7,
+      "completedTimestamp": "2022-05-04T18:26:02.768Z"
     }
   ],
   "achievements": [
@@ -72,6 +90,16 @@
       "userId": 1,
       "goalId": 4,
       "id": 3
+    },
+    {
+      "userId": 1,
+      "goalId": 5,
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "goalId": 7,
+      "id": 5
     }
   ],
   "lifts": [
