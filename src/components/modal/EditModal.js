@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { ReactDOM } from "react";
 import { CSSTransition } from "react-transition-group";
 import { EditGoal } from "../goals/EditGoal";
 import "./EditModal.css"
@@ -7,7 +6,6 @@ import "./EditModal.css"
 export const EditModal = (props) => {
 
     var ReactDOM = require('react-dom')
-    const currentUser = sessionStorage.getItem("level_user")
 
     const closeOnEscapeKeyDown = (e) => {
         if ((e.charCode || e.keyCode) === 27) {

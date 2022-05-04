@@ -9,13 +9,10 @@ export const Home = () => {
     const navigate = useNavigate()
     const [currentGoals, setCurrentGoals] = useState([])
     const currentUser = sessionStorage.getItem("level_user")
-    const [updateHome, setUpdateHome] = useState()
 
     const handleUpdateHome = (currentUser) => {
         getCurrentGoals(currentUser).then(g => {
-            // debugger
             setCurrentGoals(g)
-            console.log("this is the thing")
         })    
     }
 
@@ -40,23 +37,12 @@ export const Home = () => {
         </>
     ]
 
-    // const getGoals = (currentUser) => {
-    //     return getCurrentGoals(currentUser).then(g => {
-    //         setCurrentGoals(g)
-    //     })
-    // }
-
     useEffect(() => {
         setUserName(JSON.parse(sessionStorage.getItem("level_user_name")).split(" ")[0]);
     }, [])
 
-    // useEffect(() => {
-    //     getGoals(currentUser)
-    // }, [])
-
     useEffect(() => {
         handleUpdateHome(currentUser)
-        console.log("this is the useEffect for this")
     }, [])
 
     return( 

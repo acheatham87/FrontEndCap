@@ -7,6 +7,7 @@ export const NavBar = ({clearUser}) => {
     return (
         <nav>
             <ul className="navBar">
+                <img className="navLogo" src={'./images/levelLogo.png'}/>
                 <li className="navBar_item">
                     <Link className={`navBar__link ${location.pathname === '/Home' ? 'active':''}`} to="/Home">Home</Link>
                 </li>
