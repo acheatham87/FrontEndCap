@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import { EditModal } from '../modal/EditModal';
 import "./CurrentGoals.css"; 
 
-//creates the indivual card for each set goal
+//function accepting several props handed down by parent, DisplayCurrentGoals.js, or grandparent, Home.js, to return the individual goal "cards" mapped out by DisplayCurrentGoals.js
 export const CurrentGoals = ({ goal, handleCompleted, handleUpdateHome, handleDeleteGoal }) => { 
+
+    //sets variable currentUser equal to the currently logged in userId retrieved from sessionStorage
     const currentUser = sessionStorage.getItem("level_user") 
+
+    //sets the state of show used for Modal
     const [show, setShow] = useState(false)
-        
+
+    //JSX return to display each goal on the DOM        
     return(
         <div className="current-goal-card">
             <h3 className='current-goal-card-header'>Active Goals</h3>

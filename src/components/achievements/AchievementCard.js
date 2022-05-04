@@ -1,7 +1,7 @@
 import React from 'react';
 import "./AchievementCard.css"
 
-//creates the indivual card for each set achievement
+//creates the return for each individual achievement being mapped in Achievements.js
 export const AchievementCard = ({ achievement }) => {      
     return(
         <div className="achievement-card">

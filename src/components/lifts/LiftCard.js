@@ -1,7 +1,7 @@
 import React from 'react';
 import "./LiftCard.css"; 
 
-//creates the indivual card for each lift in the JSON
+//creates the return for each individual lift being mapped in LiftDetails.js
 export const LiftCard = ({ lift }) => {    
     
     return(

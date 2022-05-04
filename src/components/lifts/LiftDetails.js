@@ -5,8 +5,10 @@ import { LiftCard } from "./LiftCard";
 
 export const LiftDetails = () => {
 
+    //sets a useState for lifts
     const [lifts, setLifts] = useState([])
 
+    //uses getAllLifts to return all lifts in the databes.  Then takes the returned data and updates the state of lifts
     const getLifts = () => {
         return getAllLifts().then(l => {
             setLifts(l)
@@ -18,6 +20,7 @@ export const LiftDetails = () => {
     }, [])
 
     return (
+        // JSX that maps the returned lifts onto idividual lift "cards" and dispalys them on the DOM
         <>
             <div className="lift-details">
                 <h2> Lift Details </h2>

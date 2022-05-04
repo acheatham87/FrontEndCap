@@ -3,10 +3,12 @@ import { CSSTransition } from "react-transition-group";
 import { EditGoal } from "../goals/EditGoal";
 import "./EditModal.css"
 
+//function accepting props from its parent, CurrentGoal.js, and its great grandparent, Home.js.  Sets up the modal that pops up upon clicking the edit button on Home
 export const EditModal = (props) => {
 
     var ReactDOM = require('react-dom')
 
+    //function that closes the modal upon pressing the escape key
     const closeOnEscapeKeyDown = (e) => {
         if ((e.charCode || e.keyCode) === 27) {
             props.onClose()
@@ -20,6 +22,7 @@ export const EditModal = (props) => {
         }
     }, [])
 
+    //JSX of the modal to be displayed on the DOM
     return ReactDOM.createPortal(
         <CSSTransition
         in={props.show}

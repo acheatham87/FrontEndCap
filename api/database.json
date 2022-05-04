@@ -11,116 +11,41 @@
       "name": "Lisa Miles",
       "gender": "female",
       "id": 2
+    },
+    {
+      "email": "brenda@long.com",
+      "name": "Brenda Long",
+      "gender": "female",
+      "id": 3
     }
   ],
   "goals": [
     {
       "userId": 1,
-      "userBench": 200,
-      "userSquat": 315,
-      "userDeadlift": 345,
+      "userBench": 185,
+      "userSquat": 285,
+      "userDeadlift": 315,
       "completed": true,
       "id": 1,
-      "completedTimestamp": "2022-05-03T16:17:47.538Z"
+      "completedTimestamp": "2022-05-04T02:07:46.590Z"
     },
     {
       "userId": 1,
-      "userBench": 195,
-      "userSquat": 305,
-      "userDeadlift": 335,
+      "userBench": 155,
+      "userSquat": 240,
+      "userDeadlift": 265,
       "completed": true,
       "id": 2,
-      "completedTimestamp": "2022-05-03T16:17:42.521Z"
+      "completedTimestamp": "2022-05-04T13:39:40.291Z"
     },
     {
       "userId": 1,
-      "userBench": 75,
-      "userSquat": 115,
-      "userDeadlift": 130,
+      "userBench": 200,
+      "userSquat": 315,
+      "userDeadlift": 345,
       "completed": true,
       "id": 3,
-      "completedTimestamp": "2022-05-03T16:22:41.435Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 115,
-      "userSquat": 180,
-      "userDeadlift": 195,
-      "completed": true,
-      "id": 5,
-      "completedTimestamp": "2022-05-03T16:22:45.057Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 155,
-      "userSquat": 240,
-      "userDeadlift": 265,
-      "completed": true,
-      "id": 7,
-      "completedTimestamp": "2022-05-03T16:22:47.216Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 75,
-      "userSquat": 125,
-      "userDeadlift": 140,
-      "completed": true,
-      "id": 8,
-      "completedTimestamp": "2022-05-03T16:24:35.192Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 115,
-      "userSquat": 190,
-      "userDeadlift": 210,
-      "completed": true,
-      "id": 10,
-      "completedTimestamp": "2022-05-03T16:24:33.929Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 155,
-      "userSquat": 260,
-      "userDeadlift": 285,
-      "completed": true,
-      "id": 12,
-      "completedTimestamp": "2022-05-03T16:24:32.304Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 190,
-      "userSquat": 315,
-      "userDeadlift": 345,
-      "completed": true,
-      "id": 14,
-      "completedTimestamp": "2022-05-03T16:37:27.248Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 155,
-      "userSquat": 260,
-      "userDeadlift": 285,
-      "completed": true,
-      "id": 15,
-      "completedTimestamp": "2022-05-03T18:21:50.057Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 190,
-      "userSquat": 315,
-      "userDeadlift": 345,
-      "completed": true,
-      "id": 16,
-      "completedTimestamp": "2022-05-03T18:42:11.416Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 165,
-      "userSquat": 275,
-      "userDeadlift": 300,
-      "completed": true,
-      "id": 17,
-      "completedTimestamp": "2022-05-03T18:52:06.792Z"
+      "completedTimestamp": "2022-05-04T13:40:09.795Z"
     },
     {
       "userId": 1,
@@ -128,80 +53,8 @@
       "userSquat": 315,
       "userDeadlift": 345,
       "completed": true,
-      "id": 18,
-      "completedTimestamp": "2022-05-03T19:06:42.246Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 175,
-      "userSquat": 275,
-      "userDeadlift": 300,
-      "completed": true,
-      "id": 19,
-      "completedTimestamp": "2022-05-03T20:42:45.991Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 165,
-      "userSquat": 255,
-      "userDeadlift": 280,
-      "completed": true,
-      "id": 20,
-      "completedTimestamp": "2022-05-04T00:40:12.087Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 200,
-      "userSquat": 315,
-      "userDeadlift": 345,
-      "completed": true,
-      "id": 21,
-      "completedTimestamp": "2022-05-04T00:42:46.176Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 155,
-      "userSquat": 240,
-      "userDeadlift": 265,
-      "completed": true,
-      "id": 22,
-      "completedTimestamp": "2022-05-04T00:43:41.312Z"
-    },
-    {
-      "userId": 2,
-      "userBench": 190,
-      "userSquat": 315,
-      "userDeadlift": 345,
-      "completed": true,
-      "id": 25,
-      "completedTimestamp": "2022-05-04T00:46:08.906Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 175,
-      "userSquat": 275,
-      "userDeadlift": 300,
-      "completed": true,
-      "id": 26,
-      "completedTimestamp": "2022-05-04T00:47:56.427Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 240,
-      "userSquat": 375,
-      "userDeadlift": 415,
-      "completed": true,
-      "id": 27,
-      "completedTimestamp": "2022-05-04T00:57:48.054Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 145,
-      "userSquat": 225,
-      "userDeadlift": 250,
-      "completed": true,
-      "id": 28,
-      "completedTimestamp": "2022-05-04T00:59:49.240Z"
+      "id": 4,
+      "completedTimestamp": "2022-05-04T16:06:48.809Z"
     }
   ],
   "achievements": [
@@ -212,103 +65,13 @@
     },
     {
       "userId": 1,
-      "goalId": 1,
+      "goalId": 3,
       "id": 2
     },
     {
       "userId": 1,
-      "goalId": 3,
+      "goalId": 4,
       "id": 3
-    },
-    {
-      "userId": 1,
-      "goalId": 5,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "goalId": 7,
-      "id": 5
-    },
-    {
-      "userId": 2,
-      "goalId": 12,
-      "id": 6
-    },
-    {
-      "userId": 2,
-      "goalId": 10,
-      "id": 7
-    },
-    {
-      "userId": 2,
-      "goalId": 8,
-      "id": 8
-    },
-    {
-      "userId": 2,
-      "goalId": 14,
-      "id": 9
-    },
-    {
-      "userId": 2,
-      "goalId": 15,
-      "id": 10
-    },
-    {
-      "userId": 2,
-      "goalId": 16,
-      "id": 11
-    },
-    {
-      "userId": 2,
-      "goalId": 17,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "goalId": 18,
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "goalId": 19,
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "goalId": 20,
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "goalId": 21,
-      "id": 16
-    },
-    {
-      "userId": 1,
-      "goalId": 22,
-      "id": 17
-    },
-    {
-      "userId": 2,
-      "goalId": 25,
-      "id": 18
-    },
-    {
-      "userId": 1,
-      "goalId": 26,
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "goalId": 27,
-      "id": 20
-    },
-    {
-      "userId": 1,
-      "goalId": 28,
-      "id": 21
     }
   ],
   "lifts": [
