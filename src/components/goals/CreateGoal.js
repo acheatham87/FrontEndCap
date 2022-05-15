@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import { addGoal } from "../../modules/GoalManager"
 import { ifBench, ifSquat, ifDeadlift } from "../helperFunctions/weightCalculator"
+import "./CreateGoal.css"
 
 export const CreateGoal = () => {
 
@@ -115,27 +116,31 @@ export const CreateGoal = () => {
     // return to be displayed on the DOM of New Goal
      return (
         <form className="new-goal-form">
-            <h2 className="new-goal-header">Create a New Goal</h2>
-            <h4 className="new-goal-instructions">Input your goal weight (in lbs) for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts.</h4>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="bench">Bench</label>
-                    <input onChange={handleInputChange} type="text" id="userBench" required autoFocus className="newGoal-input-field" placeholder="--" value={bench} />
+            <div className="new-goal-container">
+                <h2 className="new-goal-header">Create a New Goal</h2>
+                <h4 className="new-goal-instructions">Input your goal weight (in lbs) for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts.</h4>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="bench">Bench</label>
+                        <input onChange={handleInputChange} type="text" id="userBench" required autoFocus className="newGoal-input-field" placeholder="--" value={bench} />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="squat">Squat</label>
+                        <input type="text" onChange={handleInputChange} id="userSquat" required autoFocus className="newGoal-input-field" placeholder="--" value={squat} />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="deadlift">Deadlift</label>
+                        <input type="text" onChange={handleInputChange} id="userDeadlift" required autoFocus className="newGoal-input-field" placeholder="--" value={deadlift} />
+                    </div>
+                </fieldset>
+                <div className="new-goal-button-container">
+                <button type="button" className="new-goal-submit" onClick={handleSetGoal}>Set Goal</button>
                 </div>
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="squat">Squat</label>
-                    <input type="text" onChange={handleInputChange} id="userSquat" required autoFocus className="newGoal-input-field" placeholder="--" value={squat} />
-                </div>
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="deadlift">Deadlift</label>
-                    <input type="text" onChange={handleInputChange} id="userDeadlift" required autoFocus className="newGoal-input-field" placeholder="--" value={deadlift} />
-                </div>
-            </fieldset>
-            <button type="button" className="new-goal-submit" onClick={handleSetGoal}>Set Goal</button>
+            </div>
         </form>
     )
 }

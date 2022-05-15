@@ -9,6 +9,7 @@ export const AchievementCard = ({ achievement }) => {
                 <p className="achievement-card-bench"> Bench Press: {achievement.goal.userBench}lbs </p>
                 <p className="achievement-card-squat"> Squat: {achievement.goal.userSquat}lbs </p>
                 <p className="achievement-card-deadlift"> Deadlift: {achievement.goal.userDeadlift}lbs </p>
+                <p className='achievement-card-break'>_________________________</p>
             </div>
         </div>
     )

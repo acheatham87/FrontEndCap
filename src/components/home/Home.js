@@ -37,7 +37,7 @@ export const Home = () => {
         {/* return if no goal are found on the fetch call       */}
             <div className="noGoals-container">
                 <div className="noGoals-welcome-container">
-                    <h2 className="noGoals-welcome">Welcome, {userName}</h2>
+                    <h1 className="noGoals-welcome">Welcome, {userName}</h1>
                 </div>
                 <div className="noGoals-content-container">
                     <h4 className="noGoals-message">Thank you for choosing LEVEL!  We are an app designed to help you achieve proportional strength through weight training.
@@ -52,9 +52,15 @@ export const Home = () => {
         </> ,
         <>
         {/* return if goals are in the database.  Maps the returned goals onto individual goal "cards" */}
-            <h2 className="welcome">Welcome, {userName}</h2>
-            <DisplayCurrentGoals handleUpdateHome={handleUpdateHome}
-            currentGoals={currentGoals}/>
+        <div className="ifGoals-container">
+            <div className="ifGoals-welcome-container">
+                <h1 className="welcome">Welcome, {userName}</h1>
+            </div>
+            <div className="ifGoals-content-container">
+                <DisplayCurrentGoals handleUpdateHome={handleUpdateHome}
+                currentGoals={currentGoals}/>
+            </div>
+        </div>
         </>
     ]
 

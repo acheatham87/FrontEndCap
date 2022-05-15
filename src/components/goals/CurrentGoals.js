@@ -14,7 +14,6 @@ export const CurrentGoals = ({ goal, handleCompleted, handleUpdateHome, handleDe
     //JSX return to display each goal on the DOM        
     return(
         <div className="current-goal-card">
-            <h3 className='current-goal-card-header'>Active Goals</h3>
             <div className="current-goal-card-content">
                 <p className="current-goal-card-bench"> Bench Press: {goal.userBench}lbs </p>
                 <p className="current-goal-card-squat"> Squat: {goal.userSquat}lbs </p>

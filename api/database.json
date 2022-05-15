@@ -17,6 +17,12 @@
       "name": "Brenda Long",
       "gender": "female",
       "id": 3
+    },
+    {
+      "email": "kevin@bacon.com",
+      "name": "Kevin Bacon",
+      "gender": "male",
+      "id": 4
     }
   ],
   "goals": [
@@ -73,33 +79,77 @@
       "completed": true,
       "id": 7,
       "completedTimestamp": "2022-05-04T18:26:02.768Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 140,
+      "userSquat": 215,
+      "userDeadlift": 235,
+      "completed": true,
+      "id": 8,
+      "completedTimestamp": "2022-05-06T14:17:56.662Z"
+    },
+    {
+      "userId": 4,
+      "userBench": 240,
+      "userSquat": 375,
+      "userDeadlift": 415,
+      "completed": true,
+      "id": 10,
+      "completedTimestamp": "2022-05-06T16:01:20.305Z"
+    },
+    {
+      "userId": 4,
+      "userBench": 140,
+      "userSquat": 215,
+      "userDeadlift": 235,
+      "completed": false,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "userBench": 145,
+      "userSquat": 225,
+      "userDeadlift": 245,
+      "completed": true,
+      "id": 12,
+      "completedTimestamp": "2022-05-15T20:24:00.884Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 215,
+      "userSquat": 335,
+      "userDeadlift": 370,
+      "completed": true,
+      "id": 13,
+      "completedTimestamp": "2022-05-15T21:11:52.579Z"
     }
   ],
   "achievements": [
     {
-      "userId": 1,
-      "goalId": 2,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "goalId": 3,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "goalId": 4,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "goalId": 5,
-      "id": 4
-    },
-    {
       "userId": 3,
       "goalId": 7,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "goalId": 8,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "goalId": 10,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "goalId": 12,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "goalId": 13,
+      "id": 9
     }
   ],
   "lifts": [

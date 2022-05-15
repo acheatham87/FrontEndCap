@@ -22,15 +22,17 @@ export const LiftDetails = () => {
     return (
         // JSX that maps the returned lifts onto idividual lift "cards" and dispalys them on the DOM
         <>
-            <div className="lift-details">
+        <div className="liftDetails-container">
+            <div className="liftDetails-title">
                 <h2> Lift Details </h2>
-                <div className="lift-details-content">
-                    {lifts.map(l => <LiftCard
-                             key={l.id}
-                             lift={l}/>                       
-                    )}
-                </div>
-            </div>           
+            </div>
+            <div className="liftDetails-content">
+                {lifts.map(l => <LiftCard
+                            key={l.id}
+                            lift={l}/>                       
+                )}
+            </div>    
+        </div>       
         </>
     )
 }
