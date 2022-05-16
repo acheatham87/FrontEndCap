@@ -7,7 +7,8 @@
     height: fit-content;
     width: 30em;    
     border: .25em outset whitesmoke;
-    padding: .25em;}
+    padding: .25em;
+}
 
 .ifAchievements-container {
     margin: 10em;

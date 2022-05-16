@@ -23,6 +23,12 @@
       "name": "Kevin Bacon",
       "gender": "male",
       "id": 4
+    },
+    {
+      "email": "Brandon@yahoo.com",
+      "name": "Brandon",
+      "gender": "male",
+      "id": 5
     }
   ],
   "goals": [
@@ -123,6 +129,33 @@
       "completed": true,
       "id": 13,
       "completedTimestamp": "2022-05-15T21:11:52.579Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 175,
+      "userSquat": 275,
+      "userDeadlift": 305,
+      "completed": true,
+      "id": 14,
+      "completedTimestamp": "2022-05-15T22:05:35.055Z"
+    },
+    {
+      "userId": 5,
+      "userBench": 175,
+      "userSquat": 275,
+      "userDeadlift": 300,
+      "completed": true,
+      "id": 15,
+      "completedTimestamp": "2022-05-15T22:11:48.565Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 175,
+      "userSquat": 275,
+      "userDeadlift": 300,
+      "completed": true,
+      "id": 16,
+      "completedTimestamp": "2022-05-16T14:33:59.219Z"
     }
   ],
   "achievements": [
@@ -150,6 +183,21 @@
       "userId": 1,
       "goalId": 13,
       "id": 9
+    },
+    {
+      "userId": 1,
+      "goalId": 14,
+      "id": 10
+    },
+    {
+      "userId": 5,
+      "goalId": 15,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "goalId": 16,
+      "id": 12
     }
   ],
   "lifts": [
