@@ -83,5 +83,5 @@ was hand drawn (very poorly) and has not been attached.
 
 
 ## ERD:
-![App Screenshot](https://drawsql.app/nss-c55-1/diagrams/capstone)
+![alt text](https://github.com/acheatham87/Level-FrontEndCap/blob/main/public/images/ERD.png?raw=true)
 
