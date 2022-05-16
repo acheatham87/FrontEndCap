@@ -1,0 +1,42 @@
+.noGoals-container {
+    margin: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,0.40);
+    height: fit-content;
+    width: fit-content;
+    border: .25em outset whitesmoke;
+    padding: .25em;
+}
+
+.noGoals-welcome-container {
+
+}
+
+.noGoals-content-container{
+
+}
+
+.noGoals-message {
+
+}
+
+.noGoal-button {
+   
+}
+
+.ifGoals-container {
+    margin-left: 10em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,0.40);
+    height: fit-content;
+    width: 30em;
+    border: .25em outset whitesmoke;
+    padding: .25em;
+
+}

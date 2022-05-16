@@ -43,9 +43,11 @@ fieldset {
 }
 
 .container--login {
+    /* margin: 5em; */
     text-align: center;
     background-color: #637074;
 }
+
 
 .form--login {
     background-position-x: right;
@@ -55,6 +57,9 @@ fieldset {
     background-color: hsla(0,0%,100%,0.40);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
+    border: .25em outset whitesmoke;
+    padding: .25em;
+    margin: 10em;
 }
 
 .button--close {
@@ -67,3 +72,6 @@ fieldset {
     min-height: 5rem;
 }
 
+.link--register {
+    margin-top: -10em;
+}

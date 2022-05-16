@@ -15,14 +15,22 @@ export const Achievements = () => {
     const ifAchievements = [
         <>
         {/* return for if no achievements are found on the fetch call */}
-            <h2> Your Achievments </h2>
-            <h4>It appears that you have no completed achievements in your profile</h4>
+            <div className="noAchievements-container">
+                <div className="noAchievements-title">
+                    <h2> Your Achievments </h2>
+                </div>
+                <div className="noAchievements-message">
+                    <h4>It appears that you have no completed achievements in your profile</h4>
+                </div>
+            </div>
         </>,
         <>
         {/* return if achievements are in the database.  Maps the returned achievements onto individual achievement "cards" */}
-            <div className="achievement-list">
-                <h2> Your Achievments </h2>
-                <div className="achievement-list-content">
+            <div className="ifAchievements-container">
+                <div className="ifAchievements-title">
+                    <h2> Your Achievments </h2>
+                </div>
+                <div className="ifAchievements-content">
                     {achievements.map(a => <AchievementCard
                              key={a.id}
                              achievement={a}

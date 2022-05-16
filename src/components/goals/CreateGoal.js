@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import { addGoal } from "../../modules/GoalManager"
 import { ifBench, ifSquat, ifDeadlift } from "../helperFunctions/weightCalculator"
+import "./CreateGoal.css"
 
 export const CreateGoal = () => {
 
@@ -23,7 +24,7 @@ export const CreateGoal = () => {
     //sets a useState for deadlift
     const [deadlift, setDeadlift] = useState('')
 
-    //sets the functoin useNavigate to the variable navigate
+    //sets the function useNavigate to the variable navigate
     const navigate = useNavigate()
 
     //function to handle change of the input fields in the return
@@ -56,10 +57,6 @@ export const CreateGoal = () => {
             case "userBench":
                 //sets the value of variable b equal to the function ifBench accepting the bench input fields input, as value and gender as variables.  Returns an array.
                 let b = ifBench(benchInput.value, gender)
-                //sets the value of the userSquat input field in accordance to our function return
-                squatInput.value = b[1]
-                //sets the value of the userDeadlift input field in accordance to our function return
-                deadliftInput.value = b[2]
                 //sets the new state of bench
                 setBench(b[0])
                 //sets the new state of squat and rounds it to the nearest interval of 5
@@ -71,8 +68,6 @@ export const CreateGoal = () => {
                 //see above
             case "userSquat":
                 let s = ifSquat(squatInput.value, gender)
-                benchInput.value = s[0]
-                deadliftInput.value = s[2]
                 setBench(Math.round(s[0]/5)*5)
                 setSquat(s[1])
                 setDeadlift(Math.round(s[2]/5)*5)
@@ -81,8 +76,6 @@ export const CreateGoal = () => {
                 //see above
             case "userDeadlift":
                 let d = ifDeadlift(deadliftInput.value, gender)
-                benchInput.value = d[0]
-                squatInput.value = d[1]
                 setBench(Math.round(d[0]/5)*5)
                 setSquat(Math.round(d[1]/5)*5)
                 setDeadlift(d[2])
@@ -123,27 +116,31 @@ export const CreateGoal = () => {
     // return to be displayed on the DOM of New Goal
      return (
         <form className="new-goal-form">
-            <h2 className="new-goal-header">Create a New Goal</h2>
-            <h4 className="new-goal-instructions">Input your goal weight (in lbs) for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts.</h4>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="bench">Bench</label>
-                    <input onChange={handleInputChange} type="text" id="userBench" required autoFocus className="newGoal-input-field" placeholder="--" value={bench} />
+            <div className="new-goal-container">
+                <h2 className="new-goal-header">Create a New Goal</h2>
+                <h4 className="new-goal-instructions">Input your goal weight (in lbs) for the lift of your choice.  LEVEL will generate a proportional goal for your other lifts.</h4>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="bench">Bench</label>
+                        <input onChange={handleInputChange} type="text" id="userBench" required autoFocus className="newGoal-input-field" placeholder="--" value={bench} />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="squat">Squat</label>
+                        <input type="text" onChange={handleInputChange} id="userSquat" required autoFocus className="newGoal-input-field" placeholder="--" value={squat} />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="deadlift">Deadlift</label>
+                        <input type="text" onChange={handleInputChange} id="userDeadlift" required autoFocus className="newGoal-input-field" placeholder="--" value={deadlift} />
+                    </div>
+                </fieldset>
+                <div className="new-goal-button-container">
+                <button type="button" className="new-goal-submit" onClick={handleSetGoal}>Set Goal</button>
                 </div>
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="squat">Squat</label>
-                    <input type="text" onChange={handleInputChange} id="userSquat" required autoFocus className="newGoal-input-field" placeholder="--" value={squat} />
-                </div>
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="deadlift">Deadlift</label>
-                    <input type="text" onChange={handleInputChange} id="userDeadlift" required autoFocus className="newGoal-input-field" placeholder="--" value={deadlift} />
-                </div>
-            </fieldset>
-            <button type="button" className="new-goal-submit" onClick={handleSetGoal}>Set Goal</button>
+            </div>
         </form>
     )
 }

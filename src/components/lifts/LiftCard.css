@@ -12,3 +12,9 @@
     width: 100%;
     position: absolute;
   }
+
+  .lift-card {
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
+    /* border-bottom: .25em outset whitesmoke; */
+  }

@@ -5,14 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212227;
+  background-color: #637074;
   color: whitesmoke
 }
 
 a {
-  color: whitesmoke
+  color: whitesmoke;
+  text-decoration: none
+  
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+link {
+  text-decoration: none;
 }

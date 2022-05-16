@@ -57,10 +57,6 @@ export const EditGoal = ({props}) => {
             case "userBench":
                 //sets the value of variable b equal to the function ifBench accepting the bench input fields input, as value and gender as variables.  Returns an array.
                 let b = ifBench(benchInput.value, gender)
-                //sets the value of the userSquat input field in accordance to our function return
-                squatInput.value = b[1]
-                //sets the value of the userDeadlift input field in accordance to our function return
-                deadliftInput.value = b[2]
                 //sets the new state of bench
                 setBench(b[0])
                 //sets the new state of squat and rounds it to the nearest interval of 5
@@ -72,8 +68,6 @@ export const EditGoal = ({props}) => {
                 //see above
             case "userSquat":
                 let s = ifSquat(squatInput.value, gender)
-                benchInput.value = s[0]
-                deadliftInput.value = s[2]
                 setBench(Math.round(s[0]/5)*5)
                 setSquat(s[1])
                 setDeadlift(Math.round(s[2]/5)*5)
@@ -82,8 +76,6 @@ export const EditGoal = ({props}) => {
                 //see above
             case "userDeadlift":
                 let d = ifDeadlift(deadliftInput.value, gender)
-                benchInput.value = d[0]
-                squatInput.value = d[1]
                 setBench(Math.round(d[0]/5)*5)
                 setSquat(Math.round(d[1]/5)*5)
                 setDeadlift(d[2])

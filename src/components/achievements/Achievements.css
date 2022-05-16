@@ -1,0 +1,31 @@
+.noAchievements-container {
+    margin: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,0.40);
+    height: fit-content;
+    width: 30em;    
+    border: .25em outset whitesmoke;
+    padding: .25em;
+}
+
+.ifAchievements-container {
+    margin: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,0.40);
+    height: fit-content;
+    width: 30em; 
+    border: .25em outset whitesmoke; 
+    padding: .25em;
+}
+
+.noAchievements-title {
+    /* border-bottom: .25em outset whitesmoke; */
+}
+
+.ifAchievements-title {
+    /* border-bottom: .25em outset whitesmoke; */
+}
