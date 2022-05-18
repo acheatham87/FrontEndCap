@@ -29,54 +29,15 @@
       "name": "Brandon",
       "gender": "male",
       "id": 5
+    },
+    {
+      "email": "Luke@Slater.com",
+      "name": "Luke Slater",
+      "gender": "male",
+      "id": 6
     }
   ],
   "goals": [
-    {
-      "userId": 1,
-      "userBench": 185,
-      "userSquat": 285,
-      "userDeadlift": 315,
-      "completed": true,
-      "id": 1,
-      "completedTimestamp": "2022-05-04T02:07:46.590Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 155,
-      "userSquat": 240,
-      "userDeadlift": 265,
-      "completed": true,
-      "id": 2,
-      "completedTimestamp": "2022-05-04T13:39:40.291Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 200,
-      "userSquat": 315,
-      "userDeadlift": 345,
-      "completed": true,
-      "id": 3,
-      "completedTimestamp": "2022-05-04T13:40:09.795Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 200,
-      "userSquat": 315,
-      "userDeadlift": 345,
-      "completed": true,
-      "id": 4,
-      "completedTimestamp": "2022-05-04T16:06:48.809Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 185,
-      "userSquat": 285,
-      "userDeadlift": 315,
-      "completed": true,
-      "id": 5,
-      "completedTimestamp": "2022-05-04T16:24:33.344Z"
-    },
     {
       "userId": 3,
       "userBench": 115,
@@ -85,15 +46,6 @@
       "completed": true,
       "id": 7,
       "completedTimestamp": "2022-05-04T18:26:02.768Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 140,
-      "userSquat": 215,
-      "userDeadlift": 235,
-      "completed": true,
-      "id": 8,
-      "completedTimestamp": "2022-05-06T14:17:56.662Z"
     },
     {
       "userId": 4,
@@ -113,33 +65,6 @@
       "id": 11
     },
     {
-      "userId": 1,
-      "userBench": 145,
-      "userSquat": 225,
-      "userDeadlift": 245,
-      "completed": true,
-      "id": 12,
-      "completedTimestamp": "2022-05-15T20:24:00.884Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 215,
-      "userSquat": 335,
-      "userDeadlift": 370,
-      "completed": true,
-      "id": 13,
-      "completedTimestamp": "2022-05-15T21:11:52.579Z"
-    },
-    {
-      "userId": 1,
-      "userBench": 175,
-      "userSquat": 275,
-      "userDeadlift": 305,
-      "completed": true,
-      "id": 14,
-      "completedTimestamp": "2022-05-15T22:05:35.055Z"
-    },
-    {
       "userId": 5,
       "userBench": 175,
       "userSquat": 275,
@@ -149,13 +74,31 @@
       "completedTimestamp": "2022-05-15T22:11:48.565Z"
     },
     {
-      "userId": 1,
-      "userBench": 175,
-      "userSquat": 275,
-      "userDeadlift": 300,
+      "userId": 6,
+      "userBench": 235,
+      "userSquat": 365,
+      "userDeadlift": 405,
       "completed": true,
-      "id": 16,
-      "completedTimestamp": "2022-05-16T14:33:59.219Z"
+      "id": 17,
+      "completedTimestamp": "2022-05-16T20:00:38.070Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 140,
+      "userSquat": 215,
+      "userDeadlift": 235,
+      "completed": true,
+      "id": 18,
+      "completedTimestamp": "2022-05-17T15:11:18.793Z"
+    },
+    {
+      "userId": 1,
+      "userBench": 145,
+      "userSquat": 225,
+      "userDeadlift": 250,
+      "completed": true,
+      "id": 19,
+      "completedTimestamp": "2022-05-17T15:26:38.299Z"
     }
   ],
   "achievements": [
@@ -165,29 +108,9 @@
       "id": 5
     },
     {
-      "userId": 1,
-      "goalId": 8,
-      "id": 6
-    },
-    {
       "userId": 4,
       "goalId": 10,
       "id": 7
-    },
-    {
-      "userId": 1,
-      "goalId": 12,
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "goalId": 13,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "goalId": 14,
-      "id": 10
     },
     {
       "userId": 5,
@@ -195,9 +118,19 @@
       "id": 11
     },
     {
+      "userId": 6,
+      "goalId": 17,
+      "id": 13
+    },
+    {
       "userId": 1,
-      "goalId": 16,
-      "id": 12
+      "goalId": 18,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "goalId": 19,
+      "id": 15
     }
   ],
   "lifts": [
